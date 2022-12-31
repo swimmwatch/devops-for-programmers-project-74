@@ -3,5 +3,5 @@ services:
   app:
     build:
       context: "."
-    volumes:
-      - "./app:/app"
+      dockerfile: Dockerfile.production
+    image: swimmwatch/devops-for-programmers-project-74
