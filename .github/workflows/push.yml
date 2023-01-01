@@ -27,5 +27,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: latest
+          tags: swimmwatch/devops-for-programmers-project-74:latest
           labels: ${{ steps.meta.outputs.labels }}
