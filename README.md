@@ -9,12 +9,15 @@
 - Docker, docker-compose
 - NodeJS (для локальной разработки)
 
-### Скрипты:
-```bash
-make ci         # установка зависимостей и запуск тестов
-make start-dev  # старт приложения
-make build      # сборка образа для публикации
-```
+### Установка и запуск:
+1. Создать файл `.env`. Пример есть в [`.env.example`](./.env.example])
+2. Запустить команды `make`:
+   ```bash
+   docker compose build  # сборка образов проекта
+   make build            # сборка образа для публикации
+   make ci               # установка зависимостей и запуск тестов
+   make start-dev        # старт приложения
+   ```
 
 ### Ссылки:
 - [Образ приложения (Docker Hub)](https://hub.docker.com/repository/docker/swimmwatch/devops-for-programmers-project-74)
