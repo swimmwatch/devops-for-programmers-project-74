@@ -1,4 +1,4 @@
 ci:
-	docker compose -f docker-compose.yml run --rm app npm run test
+	docker compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
 start-dev:
 	docker compose up
