@@ -5,6 +5,7 @@ services:
       context: "."
       dockerfile: Dockerfile.production
     image: swimmwatch/devops-for-programmers-project-74
+    command: bash -c "npm ci"
     depends_on:
       - db
     env_file:

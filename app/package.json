@@ -11,7 +11,6 @@
     "migrate": "sequelize db:migrate",
     "pretest": "NODE_ENV=test sequelize db:migrate:undo && NODE_ENV=test npm run migrate",
     "test": "jest --ci",
-    "test-ci": "NODE_ENV=test_ci jest --ci",
     "prestart": "NODE_ENV=production npm run migrate",
     "start": "NODE_ENV=production fastify start -a 0.0.0.0 -p 8080 -l info app.js",
     "predev": "npm run migrate",
