@@ -19,7 +19,7 @@ jobs:
           envkey_POSTGRES_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
           file_name: .env
       - name: Build images
-        run: docker compose -f docker-compose.yml build
+        run: make build
       - name: Run tests
         run: make ci
       - name: Log in to Docker Hub
